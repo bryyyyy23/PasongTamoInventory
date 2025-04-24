@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .loading-container {
+            text-align: center;
+            padding: 20px;
+            max-width: 100%;
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+            background-color: #3498db; /* Placeholder for your logo */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .ready-text {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .continue-btn {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .continue-btn:hover {
+            background-color: #27ae60;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto 30px;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                max-width: 120px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 150px;
+                height: 150px;
+                font-size: 20px;
+            }
+
+            .ready-text {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+            
+            .continue-btn {
+                padding: 10px 30px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 120px;
+                height: 120px;
+                font-size: 16px;
+            }
+
+            .ready-text {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            
+            .continue-btn {
+                padding: 8px 25px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <img src="images/logo.jpg" alt="Company Logo" class="logo">
+        <div class="ready-text">Ready</div>
+        <a href="login.php">
+            <button class="continue-btn">Continue</button>
+        </a>
+    </div>
+</body>
+</html>
